@@ -1,0 +1,1212 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#wrap {
+    width: 100%;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 상단부분 */
+.top_header {
+    width: 100%;
+    height: 49px;
+    line-height: 49px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.top_header > .inner:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.util {
+    float: right;
+}
+
+.util > li {
+    float: left;
+    margin-right: 38px;
+    font-size: 16px;
+}
+
+.util > li:last-child {
+    margin-right: 0px;
+}
+
+.util > li > a {
+    color: #333;
+}
+
+.util > li > a:hover {
+    font-weight: bold;
+}
+
+.bottom_header {
+    width: 100%;
+    height: 83px;
+    line-height: 83px;
+    text-align: center;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.bottom_header > .inner:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.menu_icon {
+    float: left;
+
+}
+
+.menu {
+    float: left;
+    width: 390px;
+    margin-left: 40px;
+}
+
+.menu > li {
+    float: left;
+    width: 130px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.menu a {
+    color: #333;
+}
+
+/*서브메뉴*/
+.submenu {
+    position: absolute;
+    top: 83px;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.submenu > li {
+    width: 130px;
+    line-height: 45px;
+    transition: all 0.5s;
+
+}
+
+.submenu > li > a {
+    font-size: 12px;
+    color: #333;
+
+}
+
+.menu > li:hover {}
+
+.menu > li:hover .submenu {
+    opacity: 1
+}
+
+.menu a:hover {
+    color: #6794fb;
+}
+
+.submenu > li:hover {
+    background-color: #6794fb;
+}
+
+.submenu a:hover {
+    color: #fff
+}
+
+.logo {
+    position: absolute;
+    width: 210px;
+    height: 50px;
+    margin: 0 auto;
+    top: 17px;
+    left: 13%;
+    right: 15%;
+}
+
+.lang > select {
+    height: 44px;
+    border: none;
+    background-color: #f4f4f4;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+}
+
+.menu2 {
+    float: right;
+    width: 520px;
+    padding-left: 10px;
+}
+
+.menu2:after {
+    display: inline-block;
+    content: "";
+    clear: both;
+}
+
+.menu2 > li {
+    float: left;
+    width: 130px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.menu2 a {
+    color: #333;
+}
+
+.submenu {
+    position: absolute;
+    top: 83px;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.submenu > li {
+    width: 130px;
+    line-height: 45px;
+    transition: all 0.5s;
+
+}
+
+.submenu > li > a {
+    font-size: 12px;
+    color: #333;
+
+}
+
+.menu2 > li:hover {}
+
+.menu2 > li:hover .submenu {
+    opacity: 1
+}
+
+.menu2 a:hover {
+    color: #fff;
+}
+
+/*메인이미지*/
+#mainimg {
+    width: 100%;
+    height: 643px;
+    background-image: url(../images/perfect-main.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#mainimg img{
+    width: 100%;
+}
+/*콘텐츠*/
+#contents {
+    background-color: #f4f4f4;
+}
+
+/*콘텐츠1*/
+.fact_set {
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 100px;
+
+
+}
+
+.facttitle {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    position: relative;
+
+}
+
+.facttitle:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 30%;
+    background-color: #333;
+}
+
+.facttitle > h2 {
+    position: absolute;
+    width: 30%;
+    font-size: 36px;
+    padding: 0 50px;
+    margin: 0 auto;
+    right: 30%;
+    left: 30%;
+    background-color: #f4f4f4;
+    color: #333
+}
+
+.facttitle > p {
+    font-size: 17px;
+    padding-top: 60px;
+}
+
+.factslider {
+    position: relative;
+    height: 489px;
+}
+
+.factslider > .btn_prev {
+    position: absolute;
+    top: 220px;
+    left: 0;
+
+}
+
+.factslider > .fact_list {
+    width: 1100px;
+    height: 489px;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    margin: 0 auto;
+
+}
+
+.factslider > .fact_list > .slide {
+    float: left;
+    width: 33.3%;
+
+}
+
+.factslider > .fact_list:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.factslider > .fact_list > .slide > img {
+    width: 100%;
+}
+
+.factslider > .btn_next {
+    position: absolute;
+    top: 220px;
+    right: 0;
+}
+
+.factdata {
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+.factdata > .data_box {
+    width: 85%;
+    height: 130px;
+    float: left;
+    background-color: #fff;
+    border-radius: 8px 0 0 8px;
+
+}
+
+.factdata > .data_box > dl {
+    width: 28.3%;
+    height: 95px;
+    float: left;
+    padding-top: 35px;
+    border-right: 1px solid #ccc;
+}
+
+.factdata > .data_box > dl:last-child {
+    border: none;
+}
+
+.factdata > .data_btn {
+    width: 15%;
+    height: 130px;
+    background-color: #6794fb;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 130px;
+    border-radius: 0 8px 8px 0;
+}
+
+.factdata > .data_btn > a {
+    color: #fff;
+    display: block;
+}
+
+.factdata > .data_box:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.factdata > .data_box > dl > dt {
+    font-size: 15px;
+    color: #0e8188;
+    font-weight: bold;
+}
+
+.factdata > .data_box > dl:last-child > dt {
+    font-size: 15px;
+    color: #000;
+}
+
+.factdata > .data_box > dl > dd {
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 8px;
+    color: #333
+}
+
+.factdata > .data_box > dl:last-child > dd {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/*콘텐츠2*/
+.banner_set {
+    width: 100%;
+    height: 341px;
+    background-image: url(../images/con4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 165px;
+    position: relative;
+}
+
+.banner_set > h3 {
+    font-size: 49px;
+    color: #fff;
+    position: absolute;
+    top: 69px;
+    left: 500px;
+}
+
+.banner_set > p {
+    font-size: 16px;
+    color: #fff;
+    padding-top: 30px;
+    position: absolute;
+    left: 550px;
+    top: 200px;
+}
+
+.banner_set > img {
+    position: absolute;
+    right: 500px;
+    top: 18px
+}
+
+.banner_set > h5 {
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    right: 400px;
+    top: 168px;
+}
+
+/*콘텐츠3*/
+.clinic_set {
+    width: 100%;
+    height: 849px;
+    text-align: center;
+    background-image: url(../images/con3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clinic_set > p {
+    font-size: 24px;
+    color: #fff;
+    padding-top: 70px;
+}
+
+.clinic_set > h3 {
+    font-size: 35px;
+    color: #6794fb;
+    padding-top: 23px;
+}
+
+.clinic_set > .clinic_list {
+    width: 971px;
+    height: 505px;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+.clinic_set > .clinic_list > .slide {
+    width: 33.3%;
+    float: left;
+}
+
+.clinic_set > .clinic_list > .slide > img {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.clinic_set > .clinic_list > .slide > h3 {
+    font-size: 30px;
+    color: #6794fb;
+    padding-top: 25px;
+}
+
+.clinic_set > .clinic_list > .slide > h2 {
+    font-size: 18px;
+    color: #fff;
+    padding-top: 27px;
+}
+
+/*컨텐츠4*/
+.sns_set {
+    width: 100%;
+    height: 570px;
+    text-align: center;
+}
+
+.sns_set > h2 {
+    font-size: 38px;
+    padding-top: 107px;
+    color: #333
+}
+
+.sns_set > p {
+    font-size: 17px;
+    padding-top: 25px;
+}
+
+.sns_set > ul {
+    width: 923px;
+    margin: 76px auto 0;
+
+}
+
+.sns_set > ul > li {
+    float: left;
+    width: 20%;
+}
+
+.sns_set > ul > li > p {
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 18px;
+    color: #333
+}
+
+/*콘텐5*/
+.add_set {
+    width: 100%;
+    height: 280px;
+    background-image: url(../images/con5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.add_set > p {
+    padding-top: 83px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.add_set > h2 {
+    padding-top: 22px;
+    font-size: 48px;
+    color: #fff;
+}
+
+
+/*콘텐6*/
+.board_set {
+    width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+    line-height: 80px;
+    font-size: 17px;
+}
+
+.board_set:after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+.board_set > h2 {
+    font-size: 17px;
+    font-weight: bold;
+    float: left;
+    padding-right: 80px;
+}
+
+.board_set > p {
+    float: left;
+}
+
+.board_set > ul {
+    float: right;
+}
+
+.board_set > ul > li {
+    float: left;
+    padding-left: 45px;
+    font-size: 17px;
+}
+
+/* 하단 */
+#footer {
+    width: 100%;
+    height: 294px;
+    background-color: #666;
+}
+
+.footer_top {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #ccc;
+    line-height: 70px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.footer_top > .inner > .brandbook {
+    display: none;
+    text-align: center;
+}
+
+.footer_top > .inner > .brandbook > a {
+    color: #fff;
+}
+
+.footer_top > .inner > ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer_top > .inner > ul > li {
+    float: left;
+    padding-right: 42px;
+}
+
+/*하단 아래*/
+.footer_bottom {
+    width: 100%;
+    height: 224px;
+    padding-top: 31px;
+}
+
+.footer_bottom > .inner:after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+
+.footer_bottom > .inner > .footer_logo,
+.copyright {
+    float: left;
+}
+
+.footer_bottom > .inner > .info {
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer_bottom > .inner > .footer_logo {
+    padding-right: 54px;
+}
+
+.footer_bottom > .inner > .copyright > ul > li {
+    position: relative;
+    padding-left: 150px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.footer_bottom > .inner > .copyright > ul > li > span {
+    position: absolute;
+    left: 0
+}
+
+.footer_bottom > .inner > .copyright > p {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 31px;
+    font-style: italic;
+}
+
+.footer_bottom > .inner > .info > ul > li {
+    float: left;
+    padding-left: 50px;
+
+}
+
+.footer_bottom > .inner > .info > ul > li > span {
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+
+}
+
+/*태블릿*/
+@media (max-width:1279px) {
+    .inner {
+        width: 100%;
+    }
+
+    .top_header {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu2 {
+        display: none;
+    }
+
+    .util {
+        display: none;
+    }
+
+    .bottom_header {
+        width: 100%;
+        position: relative;
+    }
+
+    .bottom_header > .inner {
+        width: 98%;
+    }
+
+    .logo {
+        text-align: center;
+        width: auto;
+    }
+
+    .lang > select {
+        display: block;
+        float: right;
+        color: #333;
+        font-size: 1.2rem
+    }
+
+    .lang {
+        padding-top: 20px;
+    }
+
+    #mainimg {
+        background-image: url(../images/perfect-mobile.png);
+        height: 0;
+        padding-top: calc(1050/768*100%)
+    }
+
+
+    .fact_set {
+        width: 100%;
+        padding-top: 10%
+    }
+
+    .facttitle {
+        width: 98%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .facttitle > h2 {
+        width: 40%;
+        padding: 0;
+        top: 10%;
+        left: -20%;
+        right: -20%;
+    }
+
+    .factslider {
+        height: auto;
+    }
+
+    .factslider > .btn_prev {
+        top: 20%;
+        left: 20%;
+    }
+
+    .factslider > .btn_next {
+        top: 20%;
+        right: 20%;
+    }
+
+    .factslider > .fact_list {
+        width: 50%;
+        height: 0;
+        padding-top: calc(230/360*100%);
+        position: relative;
+        left: 0;
+        right: 0;
+
+    }
+
+    .factslider > .fact_list > .slide {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .factslider > .fact_list > .slide:nth-child(2) {
+        display: none;
+    }
+
+    .factslider > .fact_list > .slide:nth-child(3) {
+        display: none;
+    }
+
+    .factdata {
+        height: auto;
+    }
+
+    .factdata > .data_box {
+        width: 100%;
+        height: auto;
+        float: revert
+    }
+
+    .factdata > .data_box > dl {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        border-right: none;
+        border-radius: 0
+    }
+
+    .factdata > .data_btn {
+        width: 100%;
+        float: revert;
+        border-radius: 0
+    }
+
+    .banner_set {
+        background-image: url(../images/sub_banner.jpg);
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        margin-top: 10px
+    }
+
+    .banner_set > h3 {
+        top: 20%;
+        left: 15%;
+        font-size: 30px
+    }
+
+    .banner_set > p {
+        font-size: 12px;
+        top: 40%;
+        left: 20%;
+        line-height: 18px
+    }
+
+    .banner_set > h5 {
+        right: 50%;
+        top: 80%;
+        font-size: 10px;
+    }
+
+    .banner_set > img {
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+        width: auto;
+    }
+
+    .clinic_set {
+        height: 0;
+        padding-top: calc(848/1920*100%);
+        padding-bottom: calc(848/1920*100%);
+        position: relative;
+    }
+
+    .clinic_set > p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .clinic_set > h3 {
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        margin: 0 auto;
+    }
+
+    .clinic_set > .clinic_list {
+        position: absolute;
+        width: 100%;
+        top: 25%;
+    }
+
+    .clinic_set > .clinic_list > .slide {
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .clinic_set > .clinic_list > .slide:nth-child(2) {
+        display: none;
+    }
+
+    .clinic_set > .clinic_list > .slide:nth-child(3) {
+        display: none;
+    }
+
+    .clinic_set > .clinic_list > .slide > img {
+        width: 60%;
+    }
+
+    .clinic_set > .clinic_list > .slide > h3 {
+        font-size: 20px;
+        padding-top: 0
+    }
+
+    .clinic_set > .clinic_list > .slide > h2 {
+        font-size: 15px;
+        padding-top: 0
+    }
+
+    .sns_set > h2 {
+        padding-top: 5%;
+    }
+
+    .sns_set > ul {
+        width: 100%;
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .sns_set > ul > li {
+        width: 33.3%;
+        margin-top: 5%;
+    }
+
+    .board_set {
+        width: 98%;
+    }
+
+    .board_set > ul > li:last-child {
+        display: none
+    }
+
+    .footer_bottom {
+        position: relative;
+    }
+
+    .footer_bottom > .inner > .footer_logo {
+        display: none
+    }
+
+    .footer_bottom > .inner > .copyright {
+        padding-top: 10px;
+    }
+
+    .footer_bottom > .inner > .info {
+        float: left;
+        position: absolute;
+        top: 10px;
+        ;
+        left: 0;
+    }
+
+    .footer_bottom > .inner > .info > ul > li {
+        font-size: 12px;
+        padding-left: 0;
+        margin-right: 10px;
+    }
+
+    .footer_bottom > .inner > .info > ul > li > span {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+/*모바일*/
+@media (max-width:768px) {
+    .inner {
+        width: 100%;
+    }
+
+    .top_header {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu2 {
+        display: none;
+    }
+
+    .util {
+        display: none;
+    }
+
+    .bottom_header {
+        position: relative;
+    }
+
+    .logo {
+        text-align: center;
+        width: auto;
+    }
+
+    .logo img {
+        height: auto;
+        width: 60%;
+        margin-left: -30px;
+    }
+
+    .lang > select {
+        display: block;
+        font-size: revert;
+        float: right;
+        color: #333;
+    }
+
+    .lang {
+        padding-top: 20px;
+    }
+
+    #mainimg {
+        background-image: url(../images/perfect-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .fact_set {
+        width: 100%;
+        padding-top: 10%;
+        position: relative
+
+    }
+
+    .facttitle > h2 {
+        font-size: 20px;
+        width: 60%;
+        position:;
+        top: 10%;
+    }
+    .facttitle > p{position: absolute; top:0; left: 20%; right: 20%; font-size: 10px;}
+
+    .factslider > .fact_list > .slide:nth-child(2) {
+        display: none;
+    }
+
+    .factslider > .fact_list > .slide:nth-child(3) {
+        display: none;
+    }
+
+    .factdata {
+        height: auto;
+    }
+
+    .factdata > .data_box {
+        width: 100%;
+        height: auto;
+        float: revert
+    }
+
+    .factdata > .data_box > dl {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        border-right: none;
+        border-radius: 0
+    }
+
+    .factdata > .data_btn {
+        width: 100%;
+        float: revert;
+        border-radius: 0
+    }
+
+    .banner_set {
+        background-image: url(../images/sub_banner.jpg);
+        background-size: cover;
+        background-position: center center;
+        position: relative
+    }
+
+    .banner_set > h3 {
+        top: 20%;
+        left: 5%;
+        font-size: 20px
+    }
+
+    .banner_set > p {
+        font-size: 12px;
+        top: 40%;
+        left: 5%;
+        line-height: 18px
+    }
+
+    .banner_set > h5 {
+        right: 50%;
+        top: 80%;
+        font-size: 10px;
+    }
+
+    .banner_set > img {
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+        width: 40%;
+        top: revert;
+    }
+
+    .clinic_set > p {
+        font-size: 10px;
+        padding-top: 5%
+    }
+
+    .clinic_set > h3 {
+        position: absolute;
+        width: 100%;
+        top: 5%;
+        margin: 0 auto;
+        font-size: 20px
+    }
+    .clinic_set > .clinic_list > .slide > h3{font-size: 15px;}
+    .clinic_set > .clinic_list > .slide > h2{font-size: 12px;}
+
+    .sns_set > h2 {
+        font-size: revert;
+        padding-top: 10%;
+    }
+
+    .sns_set > p {
+        font-size: revert;
+    }
+
+    .sns_set > ul > li {
+        width: 33.3%;
+    }
+
+    .sns_set > ul > li > p {
+        font-size: 15px
+    }
+    .add_set > p { font-size: 16px}
+    .add_set > h2 {
+        font-size: 28px
+    }
+
+    .board_set {
+        width: 98%;
+        line-height: normal;
+    }
+
+    .board_set > h2 {
+        float: none;
+    }
+
+    .board_set > p {
+        font-size: 14px;
+        float: none;
+    }
+
+    .board_set > ul {
+        float: none;
+    }
+
+    .board_set > ul > li {
+        float: none;
+        font-size: 14px;
+        padding-left: 0
+    }
+
+    .footer_top > .inner > .brandbook {
+        display: block;
+    }
+
+    .footer_top > .inner > ul {
+        display: none;
+    }
+
+    .footer_bottom {
+        position: relative;
+    }
+    .footer_bottom > .inner{ width: 98%}
+
+    .footer_bottom > .inner > .footer_logo {
+        display: none
+    }
+
+    .footer_bottom > .inner > .copyright {
+        padding-top: 10px;
+    }
+
+    .footer_bottom > .inner > .info {
+        float: left;
+        position: absolute;
+        top: 10px;
+        left: 1%;
+    }
+
+    .footer_bottom > .inner > .info > ul > li {
+        font-size: 12px;
+        padding-left: 0;
+        margin-right: 10px;
+    }
+
+    .footer_bottom > .inner > .info > ul > li > span {
+        font-size: 12px;
+    }
+}

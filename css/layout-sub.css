@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.hidden {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+}
+
+#header {
+    width: 1920px;
+    height: 180px;
+    background-color: #f4f4f4;
+}
+
+.header_t {
+    width: 1920px;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header_t > .inner > ul {
+    float: right;
+}
+
+.header_t > .inner > ul > li {
+    width: 90px;
+    float: left;
+    text-align: center;
+
+
+}
+
+.header_t > .inner > ul > li:last-child {
+    margin: 0;
+}
+
+.header_t > .inner > ul > li > a {
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #333;
+
+}
+
+.header_t > .inner > ul > li > a:hover {
+    color: #000;
+    font-weight: bold;
+    display: block;
+}
+
+.header_m {
+    width: 1920px;
+    height: 94px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.header_m > .inner:after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+.header_m img {
+    float: left;
+    margin-top: 35px;
+}
+
+.header_m > .inner > .nav1 {
+    float: left;
+    width: 450px;
+}
+
+.header_m > .inner > .nav1:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header_m > .inner > .nav1 > ul > li {
+    float: left;
+    width: 150px;
+    ;
+    text-align: center;
+    position: relative;
+    text-align: center;
+}
+
+.header_m > .inner > .nav1 > ul > li > a:hover {
+    color: #6794fb;
+}
+
+.header_m > .inner > .nav1 li:hover .submenu {
+    opacity: 1;
+}
+
+.header_m > .inner > .nav1 > ul > li > a {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 94px;
+    color: #333;
+    text-align: center;
+}
+
+
+/*서브메뉴*/
+.submenu {
+    position: absolute;
+    top: 94px;
+    background-color: #fff;
+    opacity: 0;
+    z-index: 1;
+}
+
+.submenu > li {
+    width: 150px;
+    padding: 15px 0;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.submenu > li > a {
+    color: #333
+}
+
+.submenu > li:hover {
+    background-color: #6794fb;
+}
+
+.submenu > li > a:hover {
+    color: #fff;
+}
+
+.header_m > .inner > .logo {
+    position: absolute;
+    left: 43%;
+    top: -15%;
+}
+
+.header_m > .inner > .nav2 {
+    float: right;
+    width: 500px;
+}
+
+.header_m > .inner > .nav2:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header_m > .inner > .nav2 > ul > li {
+    float: left;
+    width: 125px;
+    text-align: center;
+}
+
+.header_m > .inner > .nav2 > ul > li > a {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 94px;
+    color: #333;
+
+}
+
+.header_m > .inner > .nav2 > ul > li > a:hover {
+    color: #6794fb;
+}
+
+.header_m > .inner > .nav2 li:hover .submenu {
+    opacity: 1;
+}
+
+.header_m > .inner > .nav2 > ul > li > .submenu > li {
+    width: 125px;
+    text-align: center;
+}
+
+.header_m > .inner > .lang {
+    float: right;
+    display: none
+}
+
+.header_m > .inner > .lang select {
+    display: block;
+    border: 0;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+.header_b {
+    width: 1920px;
+    height: 44px;
+    background-color: #6794fb
+}
+
+.header_b > .inner > ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header_b > .inner > ul > li {
+    float: left;
+    line-height: 44px;
+}
+
+.header_b > .inner > ul > li img {
+    vertical-align: middle;
+}
+
+.header_b > .inner > ul > li > select {
+    width: 100%;
+    height: 44px;
+    border: none;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    background-color: #6794fb;
+    font-weight: bold;
+    color: #333;
+}
+
+/*메인이미지*/
+#mainimg {
+    width: 100%;
+    height: 460px;
+    background-image: url(../images/mainimg_sub.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+#mainimg h3 {
+    text-align: center;
+    font-size: 36px;
+    padding-top: 76px;
+    color: #333
+}
+
+#mainimg p {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 30px;
+    line-height: 30px;
+    color: #333
+}
+
+#mainimg img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/*컨텐츠*/
+#contents {
+    width: 1920px;
+    background-color: #f4f4f4;
+}
+
+/*치아모형밑 텍스트*/
+.maintxt {
+    padding-top: 220px;
+    text-align: center;
+}
+
+.maintxt > p {
+    font-size: 18px;
+    color: #333
+}
+
+.maintxt > h2 {
+    font-size: 26px;
+    padding-top: 10px;
+    color: #333
+}
+
+.maintxt > h2 > span {
+    font-size: 36px;
+    color: #6794fb;
+}
+
+/*보증기간*/
+.warranty > .top_line {
+    border-top: 1px solid #666;
+}
+
+.warranty_title {
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+.warranty > .warranty_title > h2 {
+    float: left;
+    font-size: 21px;
+    font-weight: bold;
+    color: #333
+}
+
+.warranty > .warranty_title > span {
+    float: right;
+    font-size: 17px;
+    color: #727272;
+}
+
+.warranty_title:after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+.warranty > dl {
+    width: 1280px;
+    height: 70px;
+    background-color: #fff;
+}
+
+.warranty > dl:after {
+    display: inline-block;
+    content: "";
+    clear: both
+}
+
+.warranty > dl > dt,
+dd {
+    float: left;
+}
+
+.warranty > dl > dt {
+    width: 15%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+    background-color: #6794fb;
+}
+
+.warranty > dl > dd {
+    width: 85%;
+}
+
+.warranty > dl > dd > p {
+    color: #333
+}
+
+.warranty > dl > dd > ul:after {
+    display: inline-block;
+    content: "";
+    clear: both
+}
+
+.warranty > dl > dd > ul > li {
+    width: 49.9%;
+    height: 70px;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    line-height: 70px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.warranty > dl > dd > ul > li:last-child {
+    border-right: none;
+}
+
+/*임플란트 특징*/
+.implant > h2 {
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 17px;
+    color: #333
+}
+
+.implant_box {
+    width: 1280px;
+    height: 580px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.implant_box > dl {
+    width: 33.3%;
+    height: 280px;
+    float: left;
+    text-align: center;
+}
+
+.implant_box > dl > dt {
+    padding-top: 60px
+}
+
+.implant_box > dl > i {
+    padding-top: 34px;
+    display: block;
+
+}
+
+.implant_box > dl > dd {
+    font-size: 15px;
+    float: none
+}
+
+.implant_box > dl > dd > h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #666;
+    padding: 20px 0;
+}
+
+.implant_go {
+    width: 262px;
+    height: 55px;
+    background-color: #6794fb;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 120px;
+
+}
+
+.implant_go > a {
+    font-size: 25px;
+    color: #fff;
+    width: 262px;
+    height: 55px;
+    display: block;
+    text-align: center;
+    line-height: 55px;
+
+}
+
+.board {
+    width: 1920px;
+    height: 66px;
+    background-color: #6794fb;
+}
+
+.board > ul {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.board > ul > li {
+    float: left;
+    line-height: 66px;
+}
+
+.board > ul > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 40px;
+}
+
+.board > .brandbook {
+    text-align: center;
+    line-height: 66px;
+    display: none
+}
+
+.board > .brandbook > a {
+    color: #fff;
+    text-align: center
+}
+
+#footer {
+    width: 1920px;
+    height: 416px;
+    background-color: #f4f4f4;
+}
+
+.footer_top {
+    width: 1920px;
+    height: 70px;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer_top > .inner > ul > li {
+    float: left;
+    margin-right: 30px;
+    line-height: 70px;
+}
+
+.footer_top > .inner > ul > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    line-height: 70px;
+}
+
+.footer_bottom {
+    width: 1920px;
+    height: 345px;
+    padding-top: 40px;
+}
+
+.footer_bottom > .inner > .footer_logo {
+    float: left;
+    padding-right: 20px;
+}
+
+.footer_bottom > .inner > .copyright {
+    float: left;
+    padding-left: 20px;
+}
+
+.footer_bottom > .inner > .copyright > ul > li {
+    font-size: 14px;
+    line-height: 30px;
+    color: #666;
+    position: relative;
+    padding-left: 150px;
+
+}
+
+.footer_bottom > .inner > .copyright > ul > li > span {
+    position: absolute;
+    left: 0;
+}
+
+.footer_bottom > .inner > .copyright > p {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 40px;
+    color: #666;
+
+}
+
+.footer_bottom > .inner > .info {
+    float: right;
+}
+
+.footer_bottom > .inner > .info > ul > li {
+    float: left;
+    margin-right: 20px;
+    position: ;
+    color: #6794fb;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.footer_bottom > .inner > .info > ul > li > span {
+    position: ;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/*태블릿*/
+@media (max-width:1279px) {
+    #header {
+        width: 100%;
+        height: auto
+    }
+
+    .inner {
+        width: 100%;
+    }
+
+    .header_t {
+        display: none;
+    }
+
+    .header_m {
+        width: 100%;
+    }
+
+    .header_m > .inner > .nav1 {
+        display: none
+    }
+
+    .header_m > .inner > .nav2 {
+        display: none;
+    }
+
+    .util {
+        display: none;
+    }
+
+    .header_m {
+        position: relative
+    }
+
+    .header_m > .inner > .logo {
+        position: absolute;
+        left: 40%;
+        right: 40%;
+    }
+
+    .header_m > .inner > .logo img {
+        text-align: center;
+        margin-left: -10%;
+    }
+
+    .lang > select {
+        float: right;
+        color: #333;
+        font-size: 1.2rem
+    }
+
+    .header_m > .inner > .lang {
+        display: block;
+        padding-top: 30px;
+    }
+
+    .header_b {
+        width: 100%;
+        position: relative;
+    }
+
+    .header_b > .inner {
+        width: 98%;
+    }
+
+    #mainimg {
+        width: 100%;
+        position: relative;
+    }
+    #contents {
+        width: 100%;
+    }
+
+    .warranty > dl {
+        width: 100%;
+    }
+
+    .implant_box {
+        width: 100%;
+    }
+
+    .board {
+        width: 100%;
+    }
+
+    .board > ul {
+        width: 100%;
+        display: none
+    }
+
+    .board > .brandbook {
+        display: block
+    }
+
+    #footer {
+        width: 100%;
+    }
+
+    .footer_top {
+        width: 100%;
+    }
+
+    .footer_top > .inner > ul {
+        padding-left: 20px;
+    }
+
+    .footer_top > .inner > ul > li > a {
+        font-size: 10px;
+    }
+
+    .footer_bottom {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer_bottom > .inner > .footer_logo {
+        display: none
+    }
+
+    .footer_bottom > .inner > .copyright {
+        padding-top: 10px;
+    }
+
+    .footer_bottom > .inner > .info {
+        float: left;
+        position: absolute;
+        top: 10px;
+        ;
+        left: 20px;
+    }
+
+    .footer_bottom > .inner > .info > ul > li {
+        font-size: 12px;
+        padding-left: 0;
+        margin-right: 10px;
+    }
+
+    .footer_bottom > .inner > .info > ul > li > span {
+        font-size: 12px;
+    }
+}
+
+
+
+
+/*모바일*/
+@media (max-width:768px) {
+    .header_m > .inner > .logo {
+        width: 30%
+    }
+
+    .header_m > .inner > .logo > img {}
+
+    .header_b > .inner > ul > li > select {
+        font-size: 12px
+    }
+
+    #mainimg {
+        width: 100%;
+        position: relative
+    }
+
+    #mainimg img {
+        width: 100%;
+    }
+
+    #mainimg h3 {
+        font-size: 30px;
+    }
+
+    #mainimg p {
+        font-size: 15px
+    }
+
+    .maintxt {
+        padding-top: 25%;
+    }
+
+    .maintxt > h2 {
+        font-size: 20px
+    }
+
+    .maintxt > h2 > span {
+        font-size: 25px
+    }
+
+    .warranty > dl {
+        width: 100%;
+    }
+
+    .warranty > dl > dt {
+        width: 15%;
+    }
+
+    .warranty > dl > dd {
+        width: 85%
+    }
+
+    .warranty > dl > dd > ul > li {
+        width: 49%;
+    }
+
+    .implant_box {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .implant_box > dl {
+        width: 50%;
+        height: 30%;
+    }
+
+    .implant_box > dl > dt {
+        padding-top: 30px
+    }
+
+    .implant_box > dl > dd > h3 {
+        font-size: 15px;
+        padding: 10px 0;
+        font-weight: bold
+    }
+
+    .implant_box > dl > dd > p {
+        font-size: 12px
+    }
+
+    .footer_top > .inner > ul > li {
+        margin-right: 5px;
+    }
+
+    .footer_bottom {
+        height: auto
+    }
+
+    .footer_bottom > .inner > .copyright {
+        padding-top: 20px;
+    }
+}
